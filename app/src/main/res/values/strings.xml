@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AlumnsRecyclerViewIntent</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="afegir">Afegir</string>
+    <string name="seguent">Següent</string>
+</resources>
