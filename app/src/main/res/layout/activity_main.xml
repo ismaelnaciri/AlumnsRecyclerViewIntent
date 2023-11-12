@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/age"
-            android:inputType="text"
+            android:inputType="number"
             android:minHeight="48dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +40,7 @@
             app:layout_constraintVertical_bias="0.098" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/addButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/afegir"
@@ -51,7 +51,7 @@
             app:layout_constraintVertical_bias="0.094" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/nextActivityButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/seguent"
@@ -59,7 +59,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/addButton"
             app:layout_constraintVertical_bias="0.193" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
