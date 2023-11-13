@@ -18,7 +18,12 @@ class Resultactivity : AppCompatActivity() {
     }
 
     fun initRecyclerView() {
+        //New method, min api level 33
         val alumnes = intent.getParcelableArrayListExtra<Alumn>("Alumnes", Alumn::class.java) as List<Alumn>
+        //Deprecated in java
+        // val alumnes = intent.getSerializableExtra("Alumnes") as List<Alumn>
+        // val alumnes = intent.getParcelableExtra("Alumnes") as List<Alumn>
+        // val alumnes = intent.getParcelableArrayListExtra("Alumnes") as List<Alumn>
 
         binding.recyclerViewAlumn.layoutManager = LinearLayoutManager(this)
         binding.recyclerViewAlumn.adapter = AlumnAdapter(alumnes)
