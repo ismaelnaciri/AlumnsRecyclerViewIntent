@@ -9,7 +9,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view"
-            android:layout_width="200dp"
+            android:layout_width="250dp"
+            android:minHeight="30dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:paddingBottom="10dp"
@@ -35,6 +36,8 @@
                     android:gravity="start"
                     android:paddingStart="5dp"
                     android:paddingEnd="5dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
                     tools:text="kijtfuujrtfdjyd" />
 
                 <TextView
@@ -45,6 +48,8 @@
                     android:gravity="end"
                     android:paddingStart="5dp"
                     android:paddingEnd="5dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
                     tools:text="21" />
 
             </LinearLayout>

@@ -1,10 +1,10 @@
 package cat.insvidreres.inf.alumnsrecyclerviewintent
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import cat.insvidreres.inf.alumnsrecyclerviewintent.databinding.ActivityMainBinding
-import java.util.logging.Logger
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,6 +25,12 @@ class MainActivity : AppCompatActivity() {
             binding.AgeEditText.text.clear()
 
             Toast.makeText(this, "Alumn ${alumnList[alumnList.size - 1].nom} added", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.nextActivityButton.setOnClickListener{
+            val intent = Intent(this, Resultactivity::class.java)
+            intent.putExtra("Alumnes", alumnList)
+            startActivity(intent)
         }
     }
 

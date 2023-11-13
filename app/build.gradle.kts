@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "cat.insvidreres.inf.alumnsrecyclerviewintent"
-        minSdk = 19
+        minSdk = 33
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
